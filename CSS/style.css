@@ -48,3 +48,6 @@ display: inline-block;
   .yout{
     background-color:#cd201f ;
   }
+.red_hover:hover{
+   background-color:#af0606;
+  }

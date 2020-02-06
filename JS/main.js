@@ -39,62 +39,58 @@ function createTableHouse(){
 
  
  ////////CHECK BOX FUN
-document.querySelectorAll("input[name=Party]")[0].addEventListener("click", createTableHouse);
-document.querySelectorAll("input[name=Party]")[1].addEventListener("click", createTableHouse);
-document.querySelectorAll("input[name=Party]")[2].addEventListener("click", createTableHouse);
+// document.querySelectorAll("input[name=Party]")[0].addEventListener("click", createTableHouse);
+// document.querySelectorAll("input[name=Party]")[1].addEventListener("click", createTableHouse);
+// document.querySelectorAll("input[name=Party]")[2].addEventListener("click", createTableHouse);
 
-function showMember(member){
+// function showMember(member){
   //  var  member = data.results[0].members
-    var options=document.getElementById("dropDownBody").value
-    var checkBoxes =document.querySelectorAll("input[name=party]")
-    var ckeckedBoxes=document.querySelectorAll("input[name=party]:checked")
-    if(ckeckedBoxes.length== 0 && options=="All"){
-  return true
-}
-for(var j=0 ;j<checkBoxes.length;j++){
-  if(checkBoxes[j].checked && (member.party==checkBoxes[j].value)&&((options===member.state||options==="All"))){
-    return true
-  }else if(checkedBoxes.lenght===0&&options===member.state){
-    return true
-  }
-}
-return false
- }
-showMember()
+//     var options=document.getElementById("dropDownBody").value
+//     var checkBoxes =document.querySelectorAll("input[name=party]")
+//     var ckeckedBoxes=document.querySelectorAll("input[name=party]:checked")
+//     if(ckeckedBoxes.length== 0 && options=="All"){
+//   return true
+// }
+// for(var j=0 ;j<checkBoxes.length;j++){
+//   if(checkBoxes[j].checked && (member.party==checkBoxes[j].value)&&((options===member.state||options==="All"))){
+//     return true
+//   }else if(checkedBoxes.lenght===0&&options===member.state){
+//     return true
+//   }
+// }
+// return false
+//  }
+// showMember()
 
-//DROPDOWN BUTTON TO CHOSE STATE
+// //DROPDOWN BUTTON TO CHOSE STATE
 
-function showDropDownOption(){
-  var  member = data.results[0].members
-  var options=document.getElementById("dropDownBody").value
-  if(options===member.state||options==="All"){
-    return true
-  }
-}
-document.getElementById("dropDownBody").addEventListener("change",createTableHouse)
+// function showDropDownOption(){
+//   var  member = data.results[0].members
+//   var options=document.getElementById("dropDownBody").value
+//   if(options===member.state||options==="All"){
+//     return true
+//   }
+// }
+// document.getElementById("dropDownBody").addEventListener("change",createTableHouse)
 
-function createStates(){
-  var  member = data.results[0].members
-  var whichState=[]
-  for (var i=0;i<member.length;i++){
-    if(whichState.indexOf(member[i].state==-1)){
-      whichState.push(member[i].state)
-      whichState.sort()
-    }
-  }
-  for(var j=0;j<whichState.length;j++){
-    var option=document.createElement("option")
-    option.classList.add("stateOption")
-    option.setAttribute("value",whichState[j])
-    option.innerHTML=whichState[j]
-    var dropDownOption=document.getElementById("dropDownBody")
-    dropDownOption.appendChild(option)
-  }
-}createStates()
-
-
-
-
+// function createStates(){
+//   var  member = data.results[0].members
+//   var whichState=[]
+//   for (var i=0;i<member.length;i++){
+//     if(whichState.indexOf(member[i].state==-1)){
+//       whichState.push(member[i].state)
+//       whichState.sort()
+//     }
+//   }
+//   for(var j=0;j<whichState.length;j++){
+//     var option=document.createElement("option")
+//     option.classList.add("stateOption")
+//     option.setAttribute("value",whichState[j])
+//     option.innerHTML=whichState[j]
+//     var dropDownOption=document.getElementById("dropDownBody")
+//     dropDownOption.appendChild(option)
+//   }
+// }createStates()
 
 ////for read more and less button/////
 

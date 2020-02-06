@@ -14,37 +14,55 @@
     
         <div class="row">
             <div class="col-xs-12 col-sm-12 global_header">
-               <!-- <a href="/" class="logo navbar-btn pull-left" title="home" target="_blank">
-            <img src="../image/fb_share_postcard.jpg" width="100%" class="logo navbar-btn pull-left d-inline-block  alt=">
-            </a>  -->
-            <!-- <a class="name navbar-brand" href="/" title="Home" rel="home">House.gov</a> -->
-            <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-primary">
-                <a class="navbar-brand" href="#">House.gov</a>
+              <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-primary">
+                <a class="navbar-brand" href="/HTML/index.html">
+                  <img class="logo"src="../image/logo.png" alt="" width="50"> TGIF.gov</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
               
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item ">
-                      <a class="nav-link" href="../HTML/index.html">Home page<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="../HTML/house-data.html">House </a>
-                    </li>
+                  <ul class="navbar-nav mr-auto ">
                     <li class="nav-item">
-                      <a class="nav-link" href="../HTML/senate-data.html" tabindex="-1" aria-disabled="false">Senate</a>
+                      <a class="nav-link text-white" href="../HTML/index.html">Home page</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          Congress 113
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../HTML/house-data.html">House</a>
+                        <a class="dropdown-item" href="../HTML/senate-data.html">Senate</a>
+                     
+                      </div> 
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-white red_hover" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          Attendence
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../HTML/house_attendance.html">House</a>
+                        <a class="dropdown-item" href="../HTML/senate_attendace.html">Senate</a>
+                     
+                      </div> 
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-white red_hover" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          Party Loyalty
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../HTML/house_party_layolity.html">House</a>
+                        <a class="dropdown-item" href="../HTML/senate_party_loyality.html">Senate</a>
+                     
+                      </div> 
                     </li>
                   </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-                  </form>
+                  
+                 
+                  <a class="form-inline my-2 my-lg-0 text-white d-4 ml-2" href="https://www.congress.com"> <i class="far fa-envelope mr-2"></i>info@tgif.net 
+                  </a>
                 </div>
               </nav>
-    
-            </div>
-        </div>
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -90,10 +108,16 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-   <h2>Congressmen</h2>
+        <div class="row d-flex-column my-2 justify-content-between align-items-center">
+        <div class=" col-md-8 my-2 ">
+   <h2 >Congressmen</h2>
     <p>The major power of the House is to pass federal legislation that affects the entire country, although its bills must also be passed by the Senate and further agreed to by the U.S. President before becoming law (unless both the House and Senate re-pass the legislation with a two-thirds majority in each chamber). The House has some exclusive powers: the power to initiate revenue bills, to impeach officials (impeached officials are subsequently tried in the Senate), and to elect the U.S. President in case there is no majority in the Electoral College.</p>
     <p>Each U.S. state is represented in the House in proportion to its population as measured in the census, but every state is entitled to at least one representative.</p>
-
+  </div>
+  <div class="col-md-4">
+    <img src="../image/news2.jpg" alt="" style="width: 12rem;">
+  </div>
+</div>
     <div class="row filterAreaContainer">
                 <div class="filterCheckboxes col-6">            
                         <label class="red_font">Filter by Party:</label>
