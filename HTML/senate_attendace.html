@@ -7,13 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="../CSS/style.css">
-  <title>Senate_attendace</title>
+  <title>Senate Attendance</title>
 </head>
 
 <body>
-  <div class="container text-center mb-4 border-0">
+  <div class="container">
     <div class="row">
-      <div class="col-sm-12 global_header">
+      <div class="col-xs-12 col-sm-12 global_header">
 
 
         <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-primary">
@@ -26,12 +26,13 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="../HTML/index.html">Home page<span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link text-white" href="../HTML/index.html">Home page<span
+                    class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="true">
+                <a class="nav-link dropdown-toggle text-white red_hover" href="#" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                   Congress 113
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -41,19 +42,19 @@
                 </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="true">
+                <a class="nav-link dropdown-toggle text-white red_hover" href="#" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                   Attendence
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="../HTML/house_attendance.html">House</a>
-                  <a class="dropdown-item" href="../HTML/senate_attendace.html">Senate</a>
+                  <a class="dropdown-item " href="../HTML/senate_attendace.html">Senate</a>
 
                 </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="true">
+                <a class="nav-link dropdown-toggle  text-white red_hover" href="#" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                   Party Loyalty
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -78,7 +79,7 @@
                   <p>https://www.whitehouse.gov/the_press_office/TransparencyandOpenGovernment</p>
                 </a>
               </div>
-              <a href="https://www.propublica.org/" class="btn btn-primary my-2">ProPublica</a>
+              <a href="https://www.propublica.org/" class="btn btn-outline-primary my-2">ProPublica</a>
             </div>
           </div>
         </div>
@@ -130,8 +131,8 @@
           </a>
         </div>
         <div class="row m-1">
-          <div class="col-md-6 card border-0 my-2 text-left">
-            <h2>Attendance</h2>
+          <div class="col-md-6 card border-0 my-2 text-left ">
+            <h2 class="red_text">Attendance</h2>
             <p>The Constitution specifies that a majority of members constitutes a quorum to do business in each house.
               Representatives and senators rarely force the presence of a quorum by demanding quorum calls; thus, in
               most cases, debates continue even if a majority is not present.</p><span id="dots">...</span></p>
@@ -147,8 +148,8 @@
           </div>
 
           <div class="col-md-6 my-2 ">
-            <h4>senates at aglance</h4>
-            <table class="table table-borderless">
+            <h4 class="red_text pb-2">senates at aglance</h4>
+            <table class="table">
               <thead>
                 <tr>
                   <th>Party</th>
@@ -165,9 +166,9 @@
 
         <div class="row ">
           <div class="col-md-6">
-            <h4>Least engaged (Bottom 10% Attendence)</h4>
-            <table class="table table-borderless">
-              <thead>
+            <h4 class="red_text pb-2 text-truncate">Least engaged (Bottom 10% Attendence)</h4>
+            <table class="table">
+              <thead class="table-borderless">
                 <th>Name</th>
                 <th>Number of Missed Votes</th>
                 <th>%Missed</th>
@@ -178,15 +179,15 @@
             </table>
           </div>
           <div class="col-md-6">
-            <h4>Most Engaged (Top 10% Attendence)</h4>
-            <table class="table table-borderless">
-              <thead>
-
-              </thead>
-              <tbody id="tbody3">
+            <h4 class="red_text pb-2 text-truncate">Most Engaged (Top 10% Attendence)</h4>
+            <table class="table">
+              <thead class="table-borderless">
                 <th>Name</th>
                 <th>Number of Missed Votes</th>
                 <th>%Missed</th>
+              </thead>
+              <tbody id="tbody3">
+
               </tbody>
             </table>
           </div>
@@ -209,9 +210,10 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
           integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
         </script>
-        <script src="../JS/pro-Congress-113-senate.js"></script>
-        <script src="../JS/senate_attendance_statics.js"></script>
-        <script src="../JS/main.js"></script>
+        <!-- <script src="../JS/pro-Congress-113-senate.js"></script> -->
+        <script src="../JS/fetch.js"></script>
+        <script src="../JS/statistic.js"></script>
+        <!-- <script src="../JS/main.js"></script> -->
 </body>
 
 </html>

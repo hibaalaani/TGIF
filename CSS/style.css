@@ -1,53 +1,83 @@
-
 /* body{
     margin: 0px auto;
     overflow: hidden;
 } */
 
-.bg-dark{
-    opacity: 0.6;
+.bg-dark {
+  opacity: 0.6;
 }
-#more{
-    display: none;
+
+#more {
+  display: none;
 }
+
 .card-columns {
-    @include media-breakpoint-only(md) {
-      column-count: 1;
-    }
-    @include media-breakpoint-only(md) {
-      column-count: 1;
-    }
+  @include media-breakpoint-only(md) {
+    column-count: 1;
   }
-  .fab.fa-twitter-square{
-      color: #55acee;
-    font-size:2em
+
+  @include media-breakpoint-only(md) {
+    column-count: 1;
   }
-  .fas.fa-at{
-      color: #D44638;
-      font-size:2em
-  }
-  .fas.fa-phone-square-alt{
-    font-size:2em;
-      color: #3b5998;
-  }
-  #imag-left{
-    width:100px;
-  }
-  .onplay{
-display: inline-block;
-  }
-  .face{
-   background-color:#3b5999;
-  }
-  .rss{
-    background-color:#af0606;
-  }
-  .twet{
-    background-color:#55acee;
-  }
-  .yout{
-    background-color:#cd201f ;
-  }
-.red_hover:hover{
-   background-color:#af0606;
-  }
+}
+
+.fab.fa-twitter-square {
+  color: #55acee;
+  font-size: 2em
+}
+
+.fas.fa-at {
+  color: #D44638;
+  font-size: 2em
+}
+
+.fas.fa-phone-square-alt {
+  font-size: 2em;
+  color: #3b5998;
+}
+
+#imag-left {
+  width: 100px;
+}
+
+.onplay {
+  display: inline-block;
+}
+
+.face {
+  background-color: #3b5999;
+}
+
+.rss {
+  background-color: #af0606;
+}
+
+.twet {
+  background-color: #55acee;
+}
+
+.yout {
+  background-color: #cd201f;
+}
+
+.red_hover:hover {
+  background-color: #af0606;
+}
+
+.red_text {
+  color: #dc3545;
+}
+
+.active {
+  color: #dc3545;
+
+}
+
+a {
+  color: #af0606;
+
+}
+
+a:hover {
+  color: #D44638;
+}

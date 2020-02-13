@@ -1,76 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/style.css">
     <title>House Attendance</title>
 
 </head>
+
 <body>
-    <div class="container">
-
-    
-    <div class="row">
-        <div class="col-md-6">
-            <h1>House at a glance</h1>
-            <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Party</th>
-                    <th scope="col">No. Of Reps</th>
-                    <th scope="col">% Voted with Prty</th>
-                </tr>
-            </thead>
-            <tbody id="tbody">
-            <!-- <tr id="re">
-                <td>Republican</td>
-            </tr>
-            <tr id="de">
-                <td>Democrat</td>
-            </tr>
-            <tr id="ind">
-                <td>Independent</td>
-            </tr>
-            <tr id="total">
-                <td>Total</td>
-            </tr> -->
-            
-        </tbody>
-        
-        </table>
-        </div>
-    </div>
-   <hr>
-   <!-------------second table----------------->
-   <div class="row">
-    <div class="col-md-6">
-        <h4>Least Engaged (Bottom 10% Attendence)</h4>
-   <table class="table">
-    <thead >
-        <tr>
-            <th>Party</th>
-            <th>Name</th>
-            <th>No. Missed Votes</th>
-            <th>%Missed</th>
-        </tr>
-    </thead>
-    <tbody id="tbody">
-
-    </tbody>
-</table>
-</div>
+    <div class="container text-center mb-4 border-0">
+        <div class="row">
+            <div class=" col-xs-12 col-sm-12 global_header">
 
 
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/e4b7fc4a74.js" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="../JS/pro-Congress-113-house.js"></script>
-<script src="../JS/house_attendance_statics.js"></script>
-<!-- <script src="../JS/main.js"></script> -->
+                <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-primary">
+                    <a class="navbar-brand" href="/HTML/index.html">
+                        <img class="logo" src="../image/logo.png" alt="" width="50"> TGIF.gov</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link text-white" href="../HTML/index.html">Home page<span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white red_hover" href="#" id="navbarDropdown"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Congress 113
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="../HTML/house-data.html">House</a>
+                                    <a class="dropdown-item" href="../HTML/senate-data.html">Senate</a>
+
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white red_hover" href="#" id="navbarDropdown"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Attendence
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item " href="../HTML/house_attendance.html">House</a>
+                                    <a class="dropdown-item" href="../HTML/senate_attendace.html">Senate</a>
+
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white red_hover" href="#" id="navbarDropdown"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Party Loyalty
+                                </a>
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item " href="../HTML/house_party_layolity.html">House</a>
+                                    <a class="dropdown-item" href="../HTML/senate_party_loyality.html">Senate</a>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                        <a class="form-inline my-2 my-lg-0 text-white d-4 ml-2" href="https://www.congress.com"> <i
+                                class="far fa-envelope mr-2"></i>info@tgif.net
+                        </a>
+                    </div>
+                </nav>
+                <div class="card text-center pt-4 my-2">
+                    <div class="card-header">
+                        <div class="card-body">
+                            <h5 class="card-title my-2 display-4">TGIF CONGRESS </h5>
+                            <div class="col justify-content-center">
+                                <a href="https://www.propublica.org/">
+                                    <p>https://www.whitehouse.gov/the_press_office/TransparencyandOpenGovernment</p>
+                                </a>
+                            </div>
+                            <a href="https://www.propublica.org/" class="btn btn-outline-primary my-2">ProPublica</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="thumbnail">
+                                <img src="../image/photo-congress.jpg" class="d-block w-100" alt="...">
+
+                            </div>
+                            <div class="carousel-caption d-none d-md-block text-white bg-dark opacity">
+                                <h5>First slide label</h5>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="thumbnail">
+                                <img src="../image/photo-congress.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block text-white bg-dark">
+                                <h5>Second slide label</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="thumbnail">
+                                <img src="../image/download.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block text-white bg-dark opacity">
+                                <h5 class="text-light">Third slide label</h5>
+
+                                <p class="text-light">Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="row m-1">
+                    <div class="col-md-6 card border-0 my-2 text-left ">
+                        <h2 class="red_text">Attendance</h2>
+                        <p>The Constitution specifies that a majority of members constitutes a quorum to do business in
+                            each
+                            house.
+                            Representatives and senators rarely force the presence of a quorum by demanding quorum
+                            calls;
+                            thus, in
+                            most cases, debates continue even if a majority is not present.</p><span
+                            id="dots">...</span>
+                        </p>
+                        <span id="more">
+                            <p>The Senate uses roll-call votes; a clerk calls out the names of all the senators, each
+                                senator stating
+                                "aye" or "no" when his or her name is announced. The House reserves roll-call votes for
+                                the
+                                most formal
+                                matters, as a roll-call of all 435 representatives takes quite some time; normally,
+                                members
+                                vote by
+                                electronic device. In the case of a tie, the motion in question fails. In the Senate,
+                                the
+                                Vice President
+                                may (if present) cast the tiebreaking vote.</p>
+                        </span>
+                        <button class="btn btn-outline-primary float-left btn-sm " onclick="myFunction()"
+                            id="myBtn">Read
+                            more</button>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h2 class="red_text pb-2 ">House at a glance</h2>
+                        <table class="table">
+                            <thead class="table-borderless">
+                                <tr>
+                                    <th scope="col">Party</th>
+                                    <th scope="col">No. Of Reps</th>
+                                    <th scope="col">% Voted with Prty</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <!-------------second table----------------->
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="red_text pb-2 text-truncate">Least Engaged (Bottom 10% Attendence)</h4>
+                        <table class="table">
+                            <thead class="table-borderless">
+                                <tr>
+
+                                    <th>Name</th>
+                                    <th>No. Missed Votes</th>
+                                    <th>%Missed</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody2">
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4 class="red_text pb-2 text-truncate">Most Engaged (Top 10% Attendence)</h4>
+                        <table class="table">
+                            <thead class="table-borderless">
+                                <tr>
+
+                                    <th>Name</th>
+                                    <th>No. Missed Votes</th>
+                                    <th>%Missed</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody3">
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                        crossorigin="anonymous"></script>
+                    <script src="https://kit.fontawesome.com/e4b7fc4a74.js" crossorigin="anonymous"></script>
+                    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                        crossorigin="anonymous"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                        crossorigin="anonymous"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                        crossorigin="anonymous"></script>
+                    <!-- <script src="../JS/pro-Congress-113-house.js"></script> -->
+                    <script src="../JS/fetch.js"></script>
+                    <!-- <script src="../JS/main.js"></script> -->
+                    <script src="../JS/statistic.js"></script>
+                    <!-- <script src="../JS/main.js"></script> -->
 </body>
+
 </html>
