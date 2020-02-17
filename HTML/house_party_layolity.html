@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../CSS/style.css">
     <title>House Loyalty</title>
 </head>
@@ -20,7 +21,7 @@
 
                     <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-primary">
                         <a class="navbar-brand" href="/HTML/index.html">
-                            <img class="logo" src="../image/logo.png" alt="" width="50"> TGIF.gov</a>
+                            <img class="logo" src="../image/logo.png" alt="" width="50"> TGIF</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +31,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item ">
-                                    <a class="nav-link" href="../HTML/index.html">Home page<span
+                                    <a class="nav-link text-white red_hover" href="../HTML/index.html">Home page<span
                                             class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item dropdown">
@@ -58,7 +59,7 @@
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle text-white red_hover" href="#"
+                                    <a class="nav-link dropdown-toggle text-white red_hover active" href="#"
                                         id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="true">
                                         Party Loyalty
@@ -71,21 +72,24 @@
                                 </li>
                             </ul>
 
-                            <a class="form-inline my-2 my-lg-0 text-white d-4 ml-2" href="https://www.congress.com"> <i
-                                    class="far fa-envelope mr-2"></i>info@tgif.net
+                            <a class="form-inline my-2 my-lg-0 text-white red_hover d-4 ml-2"
+                                href="https://www.congress.com"> <i class="far fa-envelope mr-2"></i>info@tgif.net
                             </a>
                         </div>
                     </nav>
                     <div class="card text-center pt-4 my-2">
                         <div class="card-header">
                             <div class="card-body">
-                                <h5 class="card-title my-2 display-4">TGIF CONGRESS </h5>
+                                <a href="https://www.whitehouse.gov/the_press_office/TransparencyandOpenGovernment">
+                                    <h5 class="card-title my-2 display-4">Transparent Government in Fact</h5>
+                                </a>
                                 <div class="col justify-content-center">
                                     <a href="https://www.propublica.org/">
-                                        <p>https://www.whitehouse.gov/the_press_office/TransparencyandOpenGovernment</p>
+
                                     </a>
                                 </div>
-                                <a href="https://www.propublica.org/" class="btn btn-primary my-2">ProPublica</a>
+                                <a href="https://www.propublica.org/"
+                                    class="btn btn-outline-primary my-2">ProPublica</a>
                             </div>
                         </div>
                     </div>
@@ -142,8 +146,9 @@
                     </div>
                     <div class="row m-1">
                         <div class="col-md-6 card border-0 my-2 text-left">
-                            <h2 class="red_text">Party Loyalty</h2>
-                            <p>Those who consider themselves to be strong partisans, strong Democrats and strong
+                            <h2 class="red_text ">Party Loyalty</h2>
+                            <p class="text-justify">Those who consider themselves to be strong partisans, strong
+                                Democrats and strong
                                 Republicans
                                 respectively, tend to be the most faithful in voting for their party's nominee for
                                 office
@@ -153,13 +158,13 @@
 
                         <div class="col-md-6 my-2 ">
                             <h4 class="red_text">House at aglance</h4>
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>Party</th>
-                                        <th>No. of Reps</th>
-                                        <th>%Voted w/Party</th>
-                                    </tr>
+                            <table class="table  table-hover table-striped">
+                                <thead class="table-primary table-borderless">
+
+                                    <th>Party</th>
+                                    <th>No. of Reps</th>
+                                    <th>%Voted w/Party</th>
+
                                 </thead>
                                 <tbody id="tbody">
 
@@ -168,56 +173,85 @@
                         </div>
                     </div>
 
-                    <div class="row ">
-                        <div class="col-md-6">
-                            <h4 class="red_text">Least Loyal (Bottom 10% of Party)</h4>
-                            <table class="table">
-                                <thead>
+                    <div class="row  my-4 ">
+                        <div class="col-lg-6  my-4">
+                            <h4 class="red_text pb-2 text-truncate">Least Loyal (Bottom 10% of Party)</h4>
+                            <table class="table  table-hover table-striped">
+                                <thead class="table-primary table-borderless">
+
                                     <th>Name</th>
                                     <th>Number Party Votes</th>
                                     <th>% Party Votes</th>
+
+
                                 </thead>
                                 <tbody id="tbody4">
 
                                 </tbody>
                             </table>
                         </div>
-                        <div class="col-md-6">
-                            <h4 class="red_text">Most Loyal (Top 10% of Party)</h4>
-                            <table class="table ">
-                                <thead>
+                        <div class="col-lg-6 my-4">
+                            <h4 class="red_text pb-2">Most Loyal (Top 10% of Party)</h4>
+                            <table class="table  table-hover table-striped ">
+                                <thead class="table-primary table-borderless">
 
-                                </thead>
-                                <tbody id="tbody5">
                                     <th>Name</th>
                                     <th>Number Party Votes</th>
                                     <th>% Party Votes</th>
+
+
+                                </thead>
+                                <tbody id="tbody5">
+
                                 </tbody>
                             </table>
                         </div>
                     </div>
+                    <!-- Footer -->
+                    <footer class="page-footer font-small  col indigo pt-4 mt-4">
 
-                    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-                        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-                        crossorigin="anonymous">
-                    </script>
-                    <script src="https://kit.fontawesome.com/e4b7fc4a74.js" crossorigin="anonymous"></script>
-                    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-                        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-                        crossorigin="anonymous">
-                    </script>
-                    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-                        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-                        crossorigin="anonymous">
-                    </script>
-                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-                        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-                        crossorigin="anonymous">
-                    </script>
-                    <!-- <script src="../JS/pro-Congress-113-house.js"></script> -->
-                    <script src="../JS/fetch.js"></script>
-                    <script src="../JS/statistic.js"></script>
-                    <!-- <script src="../JS/main.js"></script> -->
+
+                        <div class="card my-2 bg-light">
+                            <!-- <div class=" d-flex flex-lg-row flex-sm-column bd-highlight mx-3 mb-3 justify-content-around text-muted"> -->
+                            <div class=" row d-flex align-items-center justify-content-around ">
+                                <div class="col col-sm-6">
+                                    <!-- <i class="fab fa-twitter-square"></i>
+                <i class="fas fa-at"></i>
+                <i class="fas fa-phone-square-alt"></i> -->
+                                    <a href="#" class="fab fa-facebook"></a>
+                                    <a href="#" class="fab fa-twitter"></a>
+                                    <a href="#" class="fab fa-google"></a>
+                                    <a href="#" class="fab fa-linkedin"></a>
+
+                                </div>
+                                <div class="col col-sm-6">
+                                    <!-- Copyright -->
+                                    <div class="footer-copyright text-center py-3">
+                                        <a href="https://mdbootstrap.com/bootstrap-tutorial/"> TGIF@2020.com</a>
+                                    </div>
+                                    <!-- Copyright -->
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous">
+            </script>
+            <script src="https://kit.fontawesome.com/e4b7fc4a74.js" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                crossorigin="anonymous">
+            </script>
+
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous">
+            </script>
+            <script src="../JS/fetch.js"></script>
+            <script src="../JS/statistic.js"></script>
     </body>
 
 </html>

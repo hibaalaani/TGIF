@@ -11,14 +11,14 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container text-center mb-4 border-0">
     <div class="row">
-      <div class="col-xs-12 col-sm-12 global_header">
+      <div class="col-sm-12 global_header">
 
 
         <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-primary">
           <a class="navbar-brand" href="/HTML/index.html">
-            <img class="logo" src="../image/logo.png" alt="" width="50"> House.gov</a>
+            <img class="logo" src="../image/logo.png" alt="" width="50"> TGIF</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item ">
-                <a class="nav-link text-white" href="../HTML/index.html">Home page<span
+                <a class="nav-link text-white red_hover" href="../HTML/index.html">Home page<span
                     class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item dropdown">
@@ -42,8 +42,8 @@
                 </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white red_hover" href="#" id="navbarDropdown" role="button"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <a class="nav-link dropdown-toggle text-white red_hover active" href="#" id="navbarDropdown"
+                  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                   Attendence
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -65,7 +65,7 @@
               </li>
             </ul>
 
-            <a class="form-inline my-2 my-lg-0 text-white d-4 ml-2" href="https://www.congress.com"> <i
+            <a class="form-block my-2 my-lg-0 text-white d-4 ml-2" href="https://www.congress.com"> <i
                 class="far fa-envelope mr-2"></i>info@tgif.net
             </a>
           </div>
@@ -73,10 +73,12 @@
         <div class="card text-center pt-4 my-2">
           <div class="card-header">
             <div class="card-body">
-              <h5 class="card-title my-2 display-4">TGIF CONGRESS </h5>
+              <a href="https://www.whitehouse.gov/the_press_office/TransparencyandOpenGovernment">
+                <h5 class="card-title my-2 display-4">Transparent Government in Fact</h5>
+              </a>
               <div class="col justify-content-center">
                 <a href="https://www.propublica.org/">
-                  <p>https://www.whitehouse.gov/the_press_office/TransparencyandOpenGovernment</p>
+
                 </a>
               </div>
               <a href="https://www.propublica.org/" class="btn btn-outline-primary my-2">ProPublica</a>
@@ -133,11 +135,13 @@
         <div class="row m-1">
           <div class="col-md-6 card border-0 my-2 text-left ">
             <h2 class="red_text">Attendance</h2>
-            <p>The Constitution specifies that a majority of members constitutes a quorum to do business in each house.
+            <p class="text-justify">The Constitution specifies that a majority of members constitutes a quorum to do
+              business in each house.
               Representatives and senators rarely force the presence of a quorum by demanding quorum calls; thus, in
               most cases, debates continue even if a majority is not present.</p><span id="dots">...</span></p>
             <span id="more">
-              <p>The Senate uses roll-call votes; a clerk calls out the names of all the senators, each senator stating
+              <p class="text-justify">The Senate uses roll-call votes; a clerk calls out the names of all the senators,
+                each senator stating
                 "aye" or "no" when his or her name is announced. The House reserves roll-call votes for the most formal
                 matters, as a roll-call of all 435 representatives takes quite some time; normally, members vote by
                 electronic device. In the case of a tie, the motion in question fails. In the Senate, the Vice President
@@ -148,14 +152,14 @@
           </div>
 
           <div class="col-md-6 my-2 ">
-            <h4 class="red_text pb-2">senates at aglance</h4>
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Party</th>
-                  <th>No. of Reps</th>
-                  <th>%Voted w/Party</th>
-                </tr>
+            <h4 class="red_text pb-2">Senates at aglance</h4>
+            <table class="table  table-hover table-striped">
+              <thead class="table-primary table-borderless">
+
+                <th>Party</th>
+                <th>No. of Reps</th>
+                <th>%Voted w/Party</th>
+
               </thead>
               <tbody id="tbody">
 
@@ -164,56 +168,90 @@
           </div>
         </div>
 
-        <div class="row ">
-          <div class="col-md-6">
-            <h4 class="red_text pb-2 text-truncate">Least engaged (Bottom 10% Attendence)</h4>
-            <table class="table">
-              <thead class="table-borderless">
+        <div class="row my-4">
+          <div class="col-lg-6 my-4">
+            <h4 class="red_text pb-2 text-truncate ">Least engaged (Bottom 10% Attendence)</h4>
+            <table class="table  table-hover table-striped">
+              <thead class="table-borderless table-primary">
+
                 <th>Name</th>
                 <th>Number of Missed Votes</th>
                 <th>%Missed</th>
+
+
               </thead>
               <tbody id="tbody2">
 
               </tbody>
             </table>
           </div>
-          <div class="col-md-6">
-            <h4 class="red_text pb-2 text-truncate">Most Engaged (Top 10% Attendence)</h4>
-            <table class="table">
-              <thead class="table-borderless">
+          <div class="col-lg-6 my-4">
+            <h4 class="red_text pb-2 ">Most Engaged (Top 10% Attendence)</h4>
+            <table class="table  table-hover table-striped">
+              <thead class="table-borderless table-primary">
+
                 <th>Name</th>
                 <th>Number of Missed Votes</th>
                 <th>%Missed</th>
+
+
               </thead>
               <tbody id="tbody3">
 
               </tbody>
             </table>
           </div>
+          <!-- Footer -->
+          <footer class="page-footer font-small  col indigo pt-4 mt-4">
+
+
+            <div class="card my-2 bg-light">
+              <!-- <div class=" d-flex flex-lg-row flex-sm-column bd-highlight mx-3 mb-3 justify-content-around text-muted"> -->
+              <div class=" row d-flex align-items-center  justify-content-around ">
+                <div class="col col-sm-6">
+                  <!-- <i class="fab fa-twitter-square"></i>
+                <i class="fas fa-at"></i>
+                <i class="fas fa-phone-square-alt"></i> -->
+                  <a href="#"><i class="fab fa-facebook"> </i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-google"> </i></a>
+                  <a href="#"><i class="fab fa-linkedin"> </i></a>
+
+                </div>
+                <div class="col col-sm-6">
+                  <!-- Copyright -->
+                  <div class="footer-copyright text-center py-3">
+                    <a href="https://mdbootstrap.com/bootstrap-tutorial/"> TGIF@2020.com</a>
+                  </div>
+                  <!-- Copyright -->
+                </div>
+              </div>
+            </div>
+          </footer>
+
         </div>
 
+      </div>
 
+    </div>
 
-
-
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-        <script src="https://kit.fontawesome.com/e4b7fc4a74.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-          integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-          integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-        </script>
-        <!-- <script src="../JS/pro-Congress-113-senate.js"></script> -->
-        <script src="../JS/fetch.js"></script>
-        <script src="../JS/statistic.js"></script>
-        <!-- <script src="../JS/main.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/e4b7fc4a74.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <!-- <script src="../JS/pro-Congress-113-senate.js"></script> -->
+    <script src="../JS/fetch.js"></script>
+    <script src="../JS/statistic.js"></script>
+    <!-- <script src="../JS/main.js"></script> -->
 </body>
 
 </html>

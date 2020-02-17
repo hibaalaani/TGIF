@@ -40,12 +40,18 @@ function fetchMyData(url) {
             } else if (document.title.includes("Loyalty")) {
                 staticCalculate(members)
                 createAtAGlanceTable(statistics)
-                loyaltyLeastNotParty()
+                loyaltyLeastMostParty()
                 createTableLoy(statistics.loyalVotLeast, "tbody4")
                 createTableLoy(statistics.loyalVotMost, "tbody5")
             } else if (document.title === "TGIF" || document.title.includes("Attendance")) {
                 myFunction()
                 myDisplay()
+                $(function () {
+                    $(document).scroll(function () {
+                        var $nav = $("#mainNavbar");
+                        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+                    });
+                });
             }
 
         }).catch((error) => {

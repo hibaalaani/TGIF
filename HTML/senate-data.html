@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../CSS/style.css">
   <title>Senate Data</title>
 </head>
@@ -13,13 +14,13 @@
 <body>
 
   <pre id="senate-data"></pre>
-  <div class="container">
+  <div class="container text-center mb-4 border-0">
 
     <div class="row">
-      <div class="col-xs-12 col-sm-12 global_header">
+      <div class=" col-sm-12 global_header">
         <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-primary">
           <a class="navbar-brand" href="/HTML/index.html">
-            <img class="logo" src="../image/logo.png" alt="" width="50"> TGIF.gov</a>
+            <img class="logo" src="../image/logo.png" alt="" width="50"> TGIF </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,7 +33,7 @@
                     class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                <a class="nav-link dropdown-toggle text-white active" href="#" id="navbarDropdown" role="button"
                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                   Congress 113
                 </a>
@@ -67,104 +68,165 @@
             </ul>
 
 
-            <a class="form-inline my-2 my-lg-0 text-white d-4 ml-2" href="https://www.congress.com"> <i
+            <a class="form-block my-2 my-lg-0 text-white d-4 ml-2" href="https://www.congress.com"> <i
                 class="far fa-envelope mr-2"></i>info@tgif.net
             </a>
           </div>
         </nav>
+        <div class="card text-center pt-4 my-2">
+          <div class="card-header">
+            <div class="card-body">
+              <a href="https://www.whitehouse.gov/the_press_office/TransparencyandOpenGovernment">
+                <h5 class="card-title my-2 display-4">Transparent Government in Fact</h5>
+              </a>
+              <div class="col justify-content-center">
+                <a href="https://www.propublica.org/">
+
+                </a>
+              </div>
+              <a href="https://www.propublica.org/" class="btn btn-outline-primary my-2">ProPublica</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="thumbnail">
+                <img src="../image/photo-congress.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-caption d-none d-md-block text-white bg-dark opacity">
+                <h5>Last Meeting</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="thumbnail">
+                <img src="../image/photo-congress.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-caption d-none d-md-block text-white bg-dark opacity">
+                <h5>HOUSE MEETING</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="thumbnail">
+                <img src="../image/download.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-caption d-none d-md-block text-white bg-dark opacity">
+                <h5 class="text-light">Last Meeting</h5>
+
+                <p class="text-light">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="row d-flex-column my-2 justify-content-between align-items-center">
+          <div class=" col-md-8 my-2 ">
+            <h2>Congressmen</h2>
+            <p class="text-justify">The major power of the House is to pass federal legislation that affects the entire
+              country, although its
+              bills must also be passed by the Senate and further agreed to by the U.S. President before becoming law
+              (unless both the House and Senate re-pass the legislation with a two-thirds majority in each chamber). The
+              House has some exclusive powers: the power to initiate revenue bills, to impeach officials (impeached
+              officials are subsequently tried in the Senate), and to elect the U.S. President in case there is no
+              majority in the Electoral College.</p>
+            <p class="text-justify">Each U.S. state is represented in the House in proportion to its population as
+              measured in the census,
+              but every state is entitled to at least one representative.</p>
+          </div>
+          <div class="col-md-4  ">
+            <img class="rounded" src=" ../image/news3.jpg" alt="" style="width: 20rem;">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 d-flex justify-content-start ">
+            <label for="filter by Party">Filter by Party:</label>
+            <label class=" mx-1"><input type="checkbox" name="Party" value="D" id="D">Democrat</label>
+            <label class=" mx-1"><input type="checkbox" name="Party" value="R" id="R">Republican</label>
+            <label class=" mx-1"><input type="checkbox" name="Party" value="I" id="I">Independent</label>
+          </div>
+          <div class="col-6 d-flex justify-content-end">
+            <label for="dropDownBody">Filter by State
+              <select class="dropdown" name="state" id="dropDownBody">
+                <option id="stateSelect" value="All" selected>All</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <table class="table text-center table-striped table-hover tableDisplay ">
+          <thead class="thead-dark">
+            <tr class="table-primary">
+              <th scope="col">Name</th>
+              <th scope="col">Party</th>
+              <th scope="col">State</th>
+              <th scope="col">Years in Office</th>
+              <th scope="col">% Votes W/Party</th>
+
+            </tr>
+          </thead>
+          <tbody id="tbody">
+
+          </tbody>
+        </table>
+        <!-- Footer -->
+        <footer class="page-footer font-small  col indigo pt-4 mt-4">
+
+
+          <div class="card my-2 bg-light">
+            <!-- <div class=" d-flex flex-lg-row flex-sm-column bd-highlight mx-3 mb-3 justify-content-around text-muted"> -->
+            <div class=" row d-flex align-items-center  justify-content-around ">
+              <div class="col col-sm-6">
+                <!-- <i class="fab fa-twitter-square"></i>
+                <i class="fas fa-at"></i>
+                <i class="fas fa-phone-square-alt"></i> -->
+                <a href="#"><i class="fab fa-facebook"> </i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google"> </i></a>
+                <a href="#"><i class="fab fa-linkedin"> </i></a>
+
+              </div>
+              <div class="col col-sm-6">
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">
+                  <a href="https://mdbootstrap.com/bootstrap-tutorial/"> TGIF@2020.com</a>
+                </div>
+                <!-- Copyright -->
+              </div>
+            </div>
+          </div>
+        </footer>
 
       </div>
     </div>
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="thumbnail">
-            <img src="../image/photo-congress.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-caption d-none d-md-block text-white bg-dark opacity">
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="thumbnail">
-            <img src="../image/photo-congress.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-caption d-none d-md-block text-white bg-dark opacity">
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="thumbnail">
-            <img src="../image/download.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-caption d-none d-md-block text-white bg-dark opacity">
-            <h5 class="text-light">Third slide label</h5>
-
-            <p class="text-light">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-    <hr>
-    <div class="row">
-      <div class="col-6">
-        <label for="filter by Party">Filter by Party:</label>
-        <label><input type="checkbox" name="Party" value="D" id="D">Democrat</label>
-        <label><input type="checkbox" name="Party" value="R" id="R">Republican</label>
-        <label><input type="checkbox" name="Party" value="I" id="I">Independent</label>
-      </div>
-      <div class="col-6 d-flex justify-content-end">
-        <label for="dropDownBody">Filter by State
-          <select class="dropdown" name="state" id="dropDownBody">
-            <option id="stateSelect" value="All" selected>All</option>
-          </select>
-        </label>
-      </div>
-    </div>
-    <table class="table text-center table-borderless table-striped table-hover tableDisplay">
-      <thead class="thead">
-        <tr>
-          <th scope="col">Name</th>
-          <th scope="col">Party</th>
-          <th scope="col">State</th>
-          <th scope="col">Years in Office</th>
-          <th scope="col">% Votes W/Party</th>
-
-        </tr>
-      </thead>
-      <tbody id="tbody">
-
-      </tbody>
-    </table>
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
-    <!--------<script src="../JS/pro-Congress-113-senate.js"></script>----->
-    <script src="../JS/fetch.js"></script>
-    <script src="../JS/statistic.js"></script>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/e4b7fc4a74.js" crossorigin="anonymous"></script>
+  <!--------<script src="../JS/pro-Congress-113-senate.js"></script>----->
+  <script src="../JS/fetch.js"></script>
+  <script src="../JS/statistic.js"></script>
 </body>
 
 </html>

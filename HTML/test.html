@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <div v-if="isLoading">
+            <p>Loading...</p>
+        </div>
+        <div v-else>
+            <table v-for="member in members">
+                <tr>
+                    <td>{{member.first_name}} {{member.middle_name}} {{member.last_name}}</td>
+                </tr>
+
+            </table>
+        </div>
+        <div v-for="member in members">
+            <select>
+                <option value="member">{{member.state}}</option>
+            </select>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script src="../JS/vue.js"></script>
+</body>
+
+</html>
