@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,6 +21,20 @@
             </table>
         </div>
         <div v-for="member in members">
+            <table>
+                <thead>
+                    <th>name</th>
+                    <th>party</th>
+                    <th>state</th>
+                </thead>
+                <tbody v-for="member in members">
+                    <tr>
+                        <td>{{member.first_name}}</td>
+                        <td>{{member.party}}</td>
+                        <td>{{member.state}}</td>
+                    </tr>
+                </tbody>
+            </table>
             <select>
                 <option value="member">{{member.state}}</option>
             </select>
@@ -32,4 +46,4 @@
     <script src="../JS/vue.js"></script>
 </body>
 
-</html>
+</html> -->
